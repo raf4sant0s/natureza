@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'header'
+                         'header'
+                          'main'
+                          'footer'
+                          ;
+}
+html{
+    background-image: url(img/serra1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    background-color: #eeeded73;
+    height: 8vmax;
+}
+
+header img {
+    height: 18vmin;
+    display: flex;
+    align-items: center;
+    margin-right: auto; 
+    margin-left: 2vmax;
+    margin-bottom: 2vmax;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.2vmax;
+    gap: 2vmax;
+    justify-content: end;
+    margin-top: 0.3vmax;
+    margin-right: 3vmax;
+    margin-left: 3.5vmax;
+}
+
+.navbar a {
+    color: #000000c2;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover{
+    border-bottom: 3px solid #000000c2;
+}
+
+
+main {
+    display: flex;
+    gap: 2vmin;
+    align-items: center; 
+    justify-content: center; 
+    padding: 5vmin; 
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    min-height: 70vh; 
+    /*background-color: #0000007f;*/
+    margin-top: 5vmin;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column; 
+    gap: 1vmin;
+    color: #ffffff;
+    text-align: center; 
+    justify-content: end;
+    font-size: 2.5vmin; 
+    background-color: #00000054;
+    border-radius: 1.5vmax;
+}
+
+.conteudo h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 3.3vmax;
+    font-style: normal;
+    margin-bottom: 2vmin; 
+    text-align: center; 
+}
+
+.conteudo .descricao { 
+    font-size: 3vmin;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+
+fieldset {
+    border: 2px solid rgb(17, 39, 33);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+}
+
+textarea {
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(1, 117, 105);
+    background-color: transparent;
+}
+
+button {
+    background-color: #eeeded73;
+    border: none;
+    padding: 0.8rem;
+    color: rgb(9, 22, 19);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+footer {
+    background-color:rgb(17, 39, 33);
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-footer {
+    color: rgb(1, 117, 105);
+}
+
+footer a {
+    text-decoration: none;
+    color: aqua;
+}
