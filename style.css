@@ -9,19 +9,11 @@
 .container {
     display: grid;
     grid-template-areas: 'header'
-                         'header'
                           'main'
                           'footer'
                           ;
 }
-html{
-    background-image: url(img/serra1.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-}
+
 header {
     display: flex;
     justify-content: space-between; 
@@ -38,6 +30,7 @@ header img {
     margin-right: auto; 
     margin-left: 2vmax;
     margin-bottom: 2vmax;
+    cursor: pointer;
 }
 
 .navbar ul {
@@ -67,34 +60,32 @@ header img {
 
 main {
     display: flex;
-    gap: 2vmin;
     align-items: center; 
     justify-content: center; 
     padding: 5vmin; 
     flex-wrap: wrap; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    min-height: 70vh; 
-    /*background-color: #0000007f;*/
-    margin-top: 5vmin;
+    background-image: url(img/serra1.jpg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vmax;
+    background-position: center center;
+    background-size: cover;
 }
 
 .conteudo {
     display: flex;
     flex-direction: column; 
-    gap: 1vmin;
+    gap: 1vmax;
     color: #ffffff;
-    text-align: center; 
-    justify-content: end;
     font-size: 2.5vmin; 
-    background-color: #00000054;
     border-radius: 1.5vmax;
+    justify-content: end;
 }
 
 .conteudo h1 {
     font-family: "Anton", sans-serif;
     font-size: 3.3vmax;
-    font-style: normal;
     margin-bottom: 2vmin; 
     text-align: center; 
 }
@@ -106,45 +97,84 @@ main {
     font-family: 'Gill Sans', sans-serif;
 }
 
+footer {
+    font-family: 'Gill Sans', sans-serif;
+}
 
 fieldset {
-    border: 2px solid rgb(17, 39, 33);
+    border: 2px solid #000000;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 2vmax;
+    margin: 2vmax;
+    justify-content: start;
+}
+
+summary {
+    color: #00395d;
+    font-size: 1.3vmax;
+    text-align: center;
+    padding: 1.5vmax;
+    background-color: #eeeded73;
+    width: 100%;
+}
+summary:hover {
+    color: #0075be;
+    cursor: pointer;
 }
 
 legend {
-    padding: 0 0.5rem;
+    text-align: start;
 }
-
+select:hover {
+    color: #0075be;
+}
 textarea {
     outline: none;
     border-radius: 5px;
-    border: 2px solid rgb(1, 117, 105);
+    border: 2px solid #0075be;
     background-color: transparent;
 }
 
 button {
-    background-color: #eeeded73;
+    background-color: #0075be;
     border: none;
-    padding: 0.8rem;
+    padding: 0.8vmax;
     color: rgb(9, 22, 19);
     border-radius: 5px;
     cursor: pointer;
     
 }
 
-footer {
-    background-color:rgb(17, 39, 33);
+input[type="text"], input[type="tel"], input[type="date"], input[type="email"] {
+    width: 100%;
+    padding: 0.6vmax;
+    border: 2px solid #0075be;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 1vmax;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #222;
+    color: white;
     padding: 2rem;
-    text-align: center;
+    flex-wrap: wrap;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
 }
 
 .paragrafo-footer {
-    color: rgb(1, 117, 105);
-}
-
-footer a {
-    text-decoration: none;
-    color: aqua;
+    text-align: center;
+    background-color: #00395d;
+    padding: 2vmax;
+    color: #ffffff;
+    font-size: 1vmax;
 }
