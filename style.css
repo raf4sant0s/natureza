@@ -64,14 +64,13 @@ main {
     align-items: center; 
     justify-content: center; 
     flex-wrap: wrap;
-    /*padding: 5vmin; */
+    padding: 5vmin; 
     flex-wrap: wrap; 
     background-image: url(img/serra1.jpg);
     background-repeat: no-repeat;
-    /*min-height: 60vmax;*/
-    background-position: center;
+    height: 40vmax;
+    background-position: center center;
     background-size: cover;
-    min-height: 60vmax;
 }
 
 .conteudo {
